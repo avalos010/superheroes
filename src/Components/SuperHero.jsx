@@ -1,6 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import { getSuperHeroDetails } from '../Api/Api'
-import {Switch,Link,Route,useParams} from 'react-router-dom';
+import {Link,useParams} from 'react-router-dom';
 
 
 function SuperHero(props) {

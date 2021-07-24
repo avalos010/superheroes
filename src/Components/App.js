@@ -1,8 +1,6 @@
 import React,{useEffect,useState} from 'react'
 import {getAllSuperheroes} from '../Api/Api'
-import {Switch,Link,Route} from 'react-router-dom';
-import SuperHero from './SuperHero';
-
+import {Link}from 'react-router-dom';
 import '../App.css';
 
 function App() {
