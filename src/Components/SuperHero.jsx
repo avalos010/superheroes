@@ -12,6 +12,12 @@ function SuperHero(props) {
             getSuperHeroDetails(param.id).then(data => setDetails(data))
         }
     }, [param])
+
+    useEffect(() => {
+        if(details) {
+            document.title = details.name
+        }
+    },[details])
     if(details) {
     return (
         <div className="hero-item">

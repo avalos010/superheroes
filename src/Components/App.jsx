@@ -8,6 +8,7 @@ function App() {
   const [superHeroes, setSuperHeroes] = useState([])
   
   useEffect(() => {
+    document.title = 'Superheroes'
     getAllSuperheroes().then(data => setSuperHeroes(data))
 }, [])
 
